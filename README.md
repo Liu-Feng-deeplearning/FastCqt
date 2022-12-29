@@ -63,7 +63,9 @@ This is benchmark for FastCqt and librosa.cqt:
 
 chunks[s]| FastCqt rtf | librosa.cqt rtf
 :---:|:---:|:---:|
-5|0.0087|0.0521
-15|0.0086|0.0150
-45|0.0067|0.0052
-135|0.0059|0.0019
+5|0.0051|0.0107
+15|0.0054|0.0078
+45|0.0054|0.0069
+135|0.0037|0.0045
+
+Note: when program is run, we use "task -c 1" to make sure cpu usage is about 100%
