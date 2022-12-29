@@ -84,6 +84,8 @@ class FastCqt {
     }
   }
 
+  int GetFreqDims() { return num_freq_; }
+
  private:
   bool ComputeCqtKernel(
       const int sample_rate, const int octave_resolution,
@@ -211,6 +213,8 @@ extern "C" {
 FastCqt *new_fastcqt(int sample_rate, float hop_size) {
   return new FastCqt(sample_rate, hop_size);
 }
+
+int get_freq_dims(FastCqt *t) { return t->GetFreqDims(); }
 
 void compute_cqt(FastCqt *t, float *signal_p, int signal_len, float *res_p,
                  int res_len) {
