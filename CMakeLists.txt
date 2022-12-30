@@ -16,7 +16,7 @@ include_directories(${FFTW_DIR}/include)
 # EXTERN LIB: Eigen
 SET(EIGEN_INCLUDE_PATH ${PROJECT_SOURCE_DIR}/3rd/eigen-3.3.7)
 include_directories(${EIGEN_INCLUDE_PATH})
-add_definitions(-DEIGEN_FFTW_DEFAULT)
+# add_definitions(-DEIGEN_FFTW_DEFAULT)
 
 include_directories(src)
 set(CoreSrc src/core.cpp)        
