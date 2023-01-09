@@ -56,12 +56,11 @@ output shape:(2280, 96)
 
 Compared with other speech features such as mel, the biggest advantage of the Cqt 
 is that it is very convenient to handle the shift of the pitch. Here is an example of audio "Red high-heeled shoes"(红色高跟鞋 in Chinese) by Yaxun Xiao. 
-We cut of signal with head 30s and compute cqt featrue with hop-size of 0.04, so we get matrix of 96x750.
+We cut of signal with head 30s and compute cqt featrue with hop-size of 0.04, so we get matrix of 96x750(or 750x96).
 Compare init data and pitch-shifted data(increase by 20%), we can see than time domain pitch-shift equals to 
 frequence domain role alone with freq-axis. And it is useful at some task because we can do data augmentation easily.
  
 <div style="text-align: center"><img src="cqt_pitch.png?raw=true" width="800" /></div>
-
 
 
 ### Efficiency 
